@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backgrount_1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:id="@+id/QuestionText"
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button_C"
+        android:layout_below="@+id/button_A"
+        android:layout_alignEnd="@+id/button_A" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/button_A"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/QuestionImage"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_B"
+        android:layout_alignBaseline="@+id/button_A"
+        android:layout_alignBottom="@+id/button_A"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_D"
+        android:layout_alignBaseline="@+id/button_C"
+        android:layout_alignBottom="@+id/button_C"
+        android:layout_toEndOf="@+id/button_C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button_D"
+        android:layout_marginTop="30dp"
+        android:id="@+id/score"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/QuestionImage"
+        android:layout_below="@+id/QuestionText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignStart="@+id/button_A"
+        android:layout_marginStart="16dp"
+        android:id="@+id/livesView"
+        android:textSize="18sp" />
+
+</RelativeLayout>
